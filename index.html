@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
 <title>Reality, Explained — an interactive walkthrough</title>
 <meta name="description" content="An interactive, diagram-driven walk through awareness, information, the quantum vacuum, entanglement, dark matter, dark energy, and the experiments testing it all." />
 <style>
@@ -43,6 +43,26 @@
   @keyframes dash{to{stroke-dashoffset:-40}}
   .flow{stroke-dasharray:5 5;animation:dash 1.4s linear infinite}
   @media (prefers-reduced-motion:reduce){.pulse,.flow{animation:none}}
+  @media (max-width:640px){
+    .wrap{padding:28px 14px 80px}
+    h1{font-size:22px}
+    .sub{font-size:13px;margin-bottom:18px}
+    .stage-h{font-size:19px;line-height:1.25}
+    .stage-title{font-size:11px}
+    .nav{gap:5px;margin-bottom:16px}
+    .nb{font-size:11px;padding:7px 10px;flex:0 0 auto}
+    svg{margin:6px -6px 0;width:calc(100% + 12px)}
+    .note{font-size:14px;line-height:1.65}
+    ul{padding-left:16px!important;font-size:13px!important}
+    .controls{margin-top:22px;padding-top:14px}
+    .controls button{padding:10px 14px;font-size:13px;flex:1;max-width:45%}
+    .counter{font-size:11px}
+    div[style*="padding:18px"]{padding:14px!important}
+  }
+  @media (max-width:420px){
+    .nb{font-size:10px;padding:6px 8px}
+    .stage-h{font-size:17px}
+  }
 </style>
 </head>
 <body>
