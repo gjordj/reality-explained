@@ -548,7 +548,7 @@
 
 <!-- 12 (NEW) Spacetime is a map -->
 <div class="pnl" id="s12">
-<div class="stage-title">Stage · time and space</div>
+<div class="stage-title">Stage · spacetime &amp; time</div>
 <div class="stage-h">Spacetime is a map, not a thing</div>
 <svg viewBox="0 0 680 360" role="img">
 <defs><marker id="m12" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M2 1L8 5L2 9" class="arr"/></marker></defs>
@@ -811,17 +811,104 @@
 </div>
 </div>
 
+<!-- 15 (NEW) Applications, scale, energy -->
+<div class="pnl" id="s15">
+<div class="stage-title">Stage · hard engineering answers</div>
+<div class="stage-h">Can any of this actually be built — and at scale?</div>
+
+<p class="note">This is the "no fluff" stage. The previous stage listed what <em>becomes possible</em> if each claim is right. This stage answers the next question: does it <b>scale</b>, does it require impossible amounts of energy, and what are the <b>hard limits</b> nothing on the list can break.</p>
+
+<svg viewBox="0 0 680 240" role="img">
+<text x="340" y="22" text-anchor="middle" class="t-prim" font-size="12" font-weight="500">Four tiers · from shipping product to fundamentally blocked</text>
+<rect x="40" y="46" width="600" height="38" rx="8" class="fill-teal stroke-teal" stroke-width=".5"/>
+<text x="56" y="70" class="t-teal" font-size="13" font-weight="500">Tier 1 · shipping, scaling now</text>
+<text x="624" y="70" text-anchor="end" class="t-hint" font-size="10">quantum computers · QKD · sensors · atomic clocks</text>
+<rect x="40" y="92" width="600" height="38" rx="8" class="fill-amber stroke-amber" stroke-width=".5"/>
+<text x="56" y="116" class="t-amber" font-size="13" font-weight="500">Tier 2 · lab-demo → 5-20 years to product</text>
+<text x="624" y="116" text-anchor="end" class="t-hint" font-size="10">PCI · quantum-bio solar · consciousness detectors</text>
+<rect x="40" y="138" width="600" height="38" rx="8" class="fill-coral stroke-coral" stroke-width=".5"/>
+<text x="56" y="162" class="t-coral" font-size="13" font-weight="500">Tier 3 · plausible · engineering-limited · no timeline</text>
+<text x="624" y="162" text-anchor="end" class="t-hint" font-size="10">quantum-brain interface · post-classical AI</text>
+<rect x="40" y="184" width="600" height="38" rx="8" class="fill-gray stroke-gray" stroke-width=".5"/>
+<text x="56" y="208" class="t-gray" font-size="13" font-weight="500">Tier 4 · fundamentally blocked by physics</text>
+<text x="624" y="208" text-anchor="end" class="t-hint" font-size="10">FTL comms · free energy · time travel</text>
+</svg>
+
+<div style="margin-top:18px;border:1px solid #444441;border-radius:12px;padding:18px;background:#23231f">
+<div style="font-size:12px;text-transform:uppercase;letter-spacing:.14em;color:#5DCAA5;margin-bottom:10px">Tier 1 · already shipping · already scaling</div>
+<p class="note" style="margin-top:0">These aren't promises. These are products. If nothing new is discovered, this tier alone is a multi-hundred-billion-dollar industry over the next two decades.</p>
+<ul style="color:#b4b2a9;font-size:14px;padding-left:18px;line-height:1.7">
+<li><b style="color:#e8e6de">Quantum computers.</b> IBM's <em>Condor</em> (2023) hit 1,121 qubits. <em>Heron</em> (2024) improved error rates 5×. Google's Willow (2024) demonstrated exponential error suppression — the first time adding qubits <em>reduced</em> error rather than increased it. Scaling is now an engineering curve, not a physics mystery. Expected: fault-tolerant machines with ~10⁶ physical qubits in the early 2030s, capable of breaking RSA and simulating chemistry no classical machine can touch. → <a href="https://research.google/blog/making-quantum-error-correction-work/" style="color:#85B7EB">Google Quantum AI / Willow</a></li>
+<li><b style="color:#e8e6de">Quantum key distribution (QKD).</b> Commercial product since 2003 (id Quantique, MagiQ). China's Micius satellite: 1,200 km entanglement-based key exchange. The Beijing–Shanghai quantum backbone: 2,000 km fiber. South Korea has a nationwide QKD network launched in 2024. Scalable, shipping, profitable.</li>
+<li><b style="color:#e8e6de">Quantum sensors.</b> Optically-pumped magnetometers (OPM) replaced SQUID-based MEG in clinical use starting ~2022 — room-temperature, wearable, 1000× cheaper, same sensitivity. Atomic clocks are already inside GPS, 5G base stations, and financial trading infrastructure. Nitrogen-vacancy diamond sensors are shipping for biomedical imaging at single-cell resolution.</li>
+<li><b style="color:#e8e6de">Quantum gravimeters.</b> Muquans (France) sells atom-interferometry gravimeters to oil, mining, and civil engineering. 10× more sensitive than classical gravimeters. Being deployed for underground imaging.</li>
+</ul>
+<p class="note"><b style="color:#e8e6de">Scale limits:</b> these all scale the normal way — manufacturing, cost curves, integration. No fundamental blocker. This tier is the safe bet.</p>
+</div>
+
+<div style="margin-top:14px;border:1px solid #444441;border-radius:12px;padding:18px;background:#23231f">
+<div style="font-size:12px;text-transform:uppercase;letter-spacing:.14em;color:#EF9F27;margin-bottom:10px">Tier 2 · lab-demonstrated · 5–20 years to product</div>
+<ul style="color:#b4b2a9;font-size:14px;padding-left:18px;line-height:1.7">
+<li><b style="color:#e8e6de">Clinical consciousness detection.</b> The Perturbational Complexity Index (Casali et al. 2013) already distinguishes conscious from unconscious states in humans at ~90% accuracy. Being deployed in ICUs for detecting covert consciousness in unresponsive patients. Scale path: make it cheaper and portable. No physics blocker.</li>
+<li><b style="color:#e8e6de">Quantum-biological solar cells.</b> Photosynthesis uses quantum coherence to achieve ~95% energy-transfer efficiency at room temperature. Classical solar cells cap around 33% (Shockley–Queisser limit). Groups at MIT, Cambridge, and Berkeley are building biomimetic light-harvesting complexes. If any of them works at manufacturable scale, this is a category-defining technology.</li>
+<li><b style="color:#e8e6de">Quantum magnetometers for brain imaging.</b> Sub-millimeter resolution of brain activity in a wearable form factor. Already working in labs (Cerca Magnetics, QuSpin). Commercial rollout has started.</li>
+<li><b style="color:#e8e6de">Precision clocks as dark-matter detectors.</b> Atomic clock networks (JILA, NIST) are sensitive enough that dark-matter fields passing through earth should perturb them. Experiments are running now.</li>
+<li><b style="color:#e8e6de">Xenon-isotope anesthesia tests (Koch/Neven).</b> If the result is positive, quantum-aware drug design becomes a real discipline. Same molecule, different isotopes, different effects — a whole new axis for therapeutics.</li>
+</ul>
+<p class="note"><b style="color:#e8e6de">Scale limits:</b> mostly integration and manufacturing. Some (quantum solar) require materials science breakthroughs. None require new physics.</p>
+</div>
+
+<div style="margin-top:14px;border:1px solid #444441;border-radius:12px;padding:18px;background:#23231f">
+<div style="font-size:12px;text-transform:uppercase;letter-spacing:.14em;color:#F0997B;margin-bottom:10px">Tier 3 · plausible but engineering-limited · no credible timeline</div>
+<ul style="color:#b4b2a9;font-size:14px;padding-left:18px;line-height:1.7">
+<li><b style="color:#e8e6de">Post-classical AI (quantum-classical hybrid).</b> Current AI is 100% classical. If brains use quantum coherence functionally (Tier 5 claim), matching human cognitive efficiency may require hybrid architectures. Quantum machine learning is a real research area (Google, IBM, Xanadu), but whether it's <em>needed</em> for AGI is unknown. <b>Not scalable today — depends on unresolved physics.</b></li>
+<li><b style="color:#e8e6de">Brain–quantum-computer interfaces.</b> Proposed by Koch/Neven. Koch's own quote: "it's total science fiction right now." Requires quantum coherence between two radically different substrates (biological microtubules and superconducting qubits) that have never been shown to interact. Decades out, if possible at all.</li>
+<li><b style="color:#e8e6de">Room-temperature biomimetic quantum processors.</b> Tryptophan superradiance (2024) suggests biology manages it. Replicating it in a controllable device is the open problem. If solved, removes the near-absolute-zero cooling requirement from quantum computing — a massive cost and scaling unlock.</li>
+<li><b style="color:#e8e6de">Consciousness-as-instrument (AI+QRNG).</b> Even the strongest version, if the effect exists, would produce drift of ~10⁻³ to 10⁻⁵. Useful for: nothing at that scale yet. Interesting for: whether the framework is testable at all.</li>
+</ul>
+<p class="note"><b style="color:#e8e6de">Scale limits:</b> these depend on physics we don't yet have. They might be possible; they might not. Treat any specific timeline claim as marketing.</p>
+</div>
+
+<div style="margin-top:14px;border:1px solid #444441;border-radius:12px;padding:18px;background:#23231f">
+<div style="font-size:12px;text-transform:uppercase;letter-spacing:.14em;color:#B4B2A9;margin-bottom:10px">Tier 4 · what this framework does NOT unlock (hard limits)</div>
+<p class="note" style="margin-top:0">This is the most important section, because it's where sci-fi gets reality wrong. None of the claims on this page break these limits. If someone tells you otherwise, they're selling something.</p>
+<ul style="color:#b4b2a9;font-size:14px;padding-left:18px;line-height:1.7">
+<li><b style="color:#e8e6de">Faster-than-light communication via entanglement.</b> <b>Forbidden</b>, by the <em>no-signaling theorem</em>. Measurement outcomes at one end of an entangled pair are random — you can't control them. You only see the correlation <em>after</em> you compare results via a classical (sub-light) channel. Entanglement is real, instant, and <b>useless for sending signals</b>. Every "quantum internet" concept relies on classical channels to complete the transmission.</li>
+<li><b style="color:#e8e6de">Free energy from the vacuum.</b> <b>Almost certainly forbidden.</b> The vacuum has energy, yes. You can even extract photons from it (the dynamical Casimir effect — Wilson et al., <em>Nature</em> 2011, experimentally confirmed). But you have to put in <em>more</em> energy than you get out — the moving mirror that creates the photons costs more energy than the photons carry. This isn't a ban on extraction; it's a ban on <em>net</em> extraction. Thermodynamics still applies to the vacuum. The "zero-point energy machine" is a fraud every time it's pitched.</li>
+<li><b style="color:#e8e6de">The cosmological constant problem.</b> Theoretical vacuum energy density is ~10¹²⁰ times larger than observed. This is the biggest mismatch in physics. Whatever is going on, it means you cannot naively "tap" vacuum energy — you'd be tapping something the universe itself is somehow hiding.</li>
+<li><b style="color:#e8e6de">Warp drives / Alcubierre.</b> Mathematically consistent with general relativity — but requires <em>negative energy density</em> on macroscopic scales, which has never been produced and may be fundamentally impossible. Recent work (Lentz 2021, Bobrick & Martire 2021) has proposed positive-energy variants; still require energies comparable to the mass of Jupiter. Not practical in any timeline anyone honest will give you.</li>
+<li><b style="color:#e8e6de">Time travel to the past.</b> No credible mechanism. Closed timelike curves are allowed in some solutions of general relativity but require either rotating black holes at extreme density, traversable wormholes (which need negative energy), or infinite cylinders. None exist.</li>
+<li><b style="color:#e8e6de">Mind reading other minds or accessing others' experiences directly.</b> Nothing on this page supports this. Entanglement produces correlations, not shared content.</li>
+</ul>
+<p class="note" style="font-size:13px;color:#888780"><b style="color:#b4b2a9">The "infinite energy" question directly:</b> No. Even if every claim on this page is correct, you do not get free energy, you do not get FTL communication, and you do not get to cheat thermodynamics. What you get is: radically better <em>efficiency</em> (quantum computing, quantum sensing, biomimetic solar), entirely new <em>measurement capabilities</em> (consciousness detection, dark-matter clocks), and a <em>better theoretical picture</em> of what the universe actually is. That's plenty. Anyone claiming more is running a scam.</p>
+</div>
+
+<div style="margin-top:14px;border:1px solid #444441;border-radius:12px;padding:18px;background:#23231f">
+<div style="font-size:12px;text-transform:uppercase;letter-spacing:.14em;color:#85B7EB;margin-bottom:10px">The honest scale summary</div>
+<p class="note" style="margin-top:0"><b style="color:#e8e6de">Is any of this scalable?</b> Yes — <em>Tier 1 is scaling now</em>, and the scaling is exponential in the way that electronics was in the 1960s. Quantum computing, QKD, and quantum sensing are no longer speculative; they are in the same phase as transistors in ~1960. Wait 20 years and quantum tech will be ordinary infrastructure.</p>
+<p class="note"><b style="color:#e8e6de">Does it require infinite energy?</b> No, and the framework specifically rules that out. The vacuum is active, but thermodynamics still applies to it. What the framework unlocks is <em>efficiency</em>, not <em>free energy</em>.</p>
+<p class="note"><b style="color:#e8e6de">What could actually be built?</b></p>
+<ol style="color:#b4b2a9;font-size:14px;padding-left:20px;line-height:1.7">
+<li><b style="color:#e8e6de">Near term (now – 2035):</b> fault-tolerant quantum computers, global QKD networks, wearable quantum brain-imaging, quantum gravimeters for underground mapping, clinical consciousness detectors, precision dark-matter-searching clock networks.</li>
+<li><b style="color:#e8e6de">Medium term (2035 – 2055):</b> biomimetic quantum solar cells, quantum-aware pharmacology, AI architectures informed by quantum-biology research, drug classes designed around isotopic-nuclear-spin effects.</li>
+<li><b style="color:#e8e6de">Long term (if the deeper claims hold):</b> room-temperature quantum hardware, hybrid quantum-classical AI, and — possibly — a working theory of quantum gravity that reshapes propulsion, computing, and cosmology in ways no one alive today can fully imagine.</li>
+<li><b style="color:#e8e6de">Never, regardless:</b> FTL, free energy, time travel, thought transmission. These are not underdeveloped — they are forbidden by the same laws this framework takes seriously.</li>
+</ol>
+<p class="note" style="font-size:13px;color:#888780">The biggest trap in this space is confusing "the universe is stranger than we thought" with "anything goes." The universe is stranger than the default view — <em>and</em> it has rules that don't bend. Tier 4 doesn't move even if every claim in Tiers 1–3 is verified. That's a feature, not a bug.</p>
+</div>
+</div>
+
 <div class="controls">
   <button onclick="step(-1)">← Back</button>
-  <span class="counter" id="counter">1 / 15</span>
+  <span class="counter" id="counter">1 / 16</span>
   <button onclick="step(1)">Next →</button>
 </div>
 </div>
 
 <script>
 // display order — keeps existing s0..s10 panels, inserts the three new ones (s11, s12, s13) in narrative position
-var order  = [11, 0, 1, 2, 3, 4, 5, 6, 7, 12, 8, 9, 13, 10, 14];
-var titles = ['Why anything','Default view','Inside experience','The flip','Information','Videogame','Entanglement','The vacuum','Mass','Spacetime &amp; time','The code','Consciousness','Forgetting','The test','So what?'];
+var order  = [11, 0, 1, 2, 3, 4, 5, 6, 7, 12, 8, 9, 13, 10, 14, 15];
+var titles = ['Why anything','Default view','Inside experience','The flip','Information','Videogame','Entanglement','The vacuum','Mass','Spacetime &amp; time','The code','Consciousness','Forgetting','The test','So what?','At scale?'];
 var nav = document.getElementById('nav'), counter = document.getElementById('counter'), cur = 0;
 titles.forEach(function(t,i){
   var b=document.createElement('button');
