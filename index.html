@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Reality, Explained — Awareness, the Vacuum, and the Code Beneath</title>
+<meta name="description" content="An interactive walkthrough of consciousness, reality, dark energy, dark matter, entanglement, and the experiments pointing toward a participatory universe." />
+<style>
+  :root{
+    --bg:#07080d; --bg2:#0e1018; --ink:#e8ecf5; --dim:#9aa3b8;
+    --acc:#7cf2c8; --acc2:#a78bfa; --warn:#ffb37a; --line:#1c2030;
+    --max:980px;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Inter,sans-serif;-webkit-font-smoothing:antialiased}
+  a{color:var(--acc)}
+  .wrap{max-width:var(--max);margin:0 auto;padding:48px 22px 120px}
+  header.hero{padding:80px 22px 40px;text-align:center;background:radial-gradient(900px 500px at 50% -10%,rgba(124,242,200,.12),transparent 60%),radial-gradient(900px 500px at 80% 10%,rgba(167,139,250,.10),transparent 60%)}
+  h1{font-size:clamp(34px,6vw,58px);line-height:1.05;margin:0 0 14px;letter-spacing:-.02em}
+  h1 .grad{background:linear-gradient(90deg,var(--acc),var(--acc2));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .sub{color:var(--dim);font-size:18px;max-width:680px;margin:0 auto}
+  nav.toc{max-width:var(--max);margin:30px auto 0;padding:18px 22px;border:1px solid var(--line);border-radius:14px;background:var(--bg2)}
+  nav.toc h3{margin:0 0 10px;font-size:13px;text-transform:uppercase;letter-spacing:.12em;color:var(--dim)}
+  nav.toc ol{margin:0;padding-left:20px;columns:2;column-gap:24px}
+  nav.toc li{margin:4px 0;break-inside:avoid}
+  nav.toc a{color:var(--ink);text-decoration:none;border-bottom:1px dashed transparent}
+  nav.toc a:hover{border-color:var(--acc)}
+  section{margin:64px 0;scroll-margin-top:24px}
+  section h2{font-size:28px;margin:0 0 6px;letter-spacing:-.01em}
+  section .kicker{display:inline-block;font-size:12px;text-transform:uppercase;letter-spacing:.18em;color:var(--acc);margin-bottom:8px}
+  section p{color:#cfd5e6}
+  .card{border:1px solid var(--line);background:var(--bg2);border-radius:16px;padding:22px;margin-top:18px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  @media (max-width:760px){.grid2{grid-template-columns:1fr}}
+  .pill{display:inline-block;padding:3px 10px;border:1px solid var(--line);border-radius:999px;font-size:12px;color:var(--dim);margin-right:6px}
+  .diagram{position:relative;border:1px solid var(--line);border-radius:14px;background:linear-gradient(180deg,#0a0d16,#0b0e18);overflow:hidden}
+  .diagram .label{position:absolute;top:10px;left:14px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim)}
+  .ctrls{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+  button.btn{background:#141826;color:var(--ink);border:1px solid var(--line);padding:8px 14px;border-radius:10px;cursor:pointer;font:inherit}
+  button.btn:hover{border-color:var(--acc)}
+  .legend{display:flex;flex-wrap:wrap;gap:14px;font-size:12px;color:var(--dim);margin-top:10px}
+  .legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:6px;vertical-align:middle}
+  blockquote{border-left:3px solid var(--acc);margin:18px 0;padding:6px 16px;color:#dfe5f3;background:#0c1019;border-radius:0 10px 10px 0}
+  table{width:100%;border-collapse:collapse;font-size:14px;margin-top:10px}
+  th,td{padding:10px 12px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+  th{color:var(--dim);font-weight:600}
+  footer{color:var(--dim);text-align:center;margin-top:80px;font-size:13px}
+  .stat{display:flex;gap:18px;flex-wrap:wrap;margin-top:14px}
+  .stat .b{flex:1;min-width:180px;border:1px solid var(--line);border-radius:12px;padding:14px;background:#0c0f19}
+  .stat .n{font-size:26px;color:var(--acc);font-weight:700}
+  .stat .l{font-size:12px;color:var(--dim);text-transform:uppercase;letter-spacing:.1em}
+  details{border:1px solid var(--line);border-radius:12px;padding:12px 14px;background:#0c0f19;margin-top:10px}
+  details summary{cursor:pointer;color:var(--ink)}
+  hr{border:none;border-top:1px solid var(--line);margin:48px 0}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap" style="padding:0">
+    <h1>Reality, <span class="grad">Explained</span></h1>
+    <p class="sub">A guided, interactive walk through what consciousness, the quantum vacuum, entanglement, dark matter and dark energy may actually be — and the experiments that are starting to test it.</p>
+    <nav class="toc">
+      <h3>Contents</h3>
+      <ol>
+        <li><a href="#flip">1. The Flip: awareness first</a></li>
+        <li><a href="#info">2. Information underneath</a></li>
+        <li><a href="#render">3. Reality renders on interaction</a></li>
+        <li><a href="#entangle">4. Entanglement = oneness leaking</a></li>
+        <li><a href="#vacuum">5. The vacuum is not empty</a></li>
+        <li><a href="#mass">6. Where mass actually comes from</a></li>
+        <li><a href="#code">7. Dark energy, dark matter, black holes</a></li>
+        <li><a href="#tuning">8. Consciousness as tuning</a></li>
+        <li><a href="#exp">9. The experiments being run</a></li>
+        <li><a href="#cern">10. Fact-check: the viral CERN claim</a></li>
+        <li><a href="#map">11. The whole picture</a></li>
+      </ol>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+<section id="flip">
+  <span class="kicker">01 — The starting point</span>
+  <h2>You have never left experience</h2>
+  <p>The default story: you are a small thing inside a vast universe. Matter is primary. Brain produces mind. But every atom, telescope and equation you have ever met is <em>an appearance inside experience</em>. You have one direct data point for consciousness — your own — and infer the rest.</p>
+  <p>The flip is not mysticism, it is a logical correction: claiming matter is more fundamental than experience asserts the primacy of something you have only ever encountered <em>as a secondary appearance within</em> the thing you are demoting.</p>
+  <div class="card">
+    <strong>Two framings of the same data:</strong>
+    <div class="grid2" style="margin-top:10px">
+      <div><span class="pill">Default</span><p style="margin-top:6px">Matter → Brain → Mind. The universe is a stage; you are an output.</p></div>
+      <div><span class="pill">The flip</span><p style="margin-top:6px">Awareness is the field; matter is what patterns inside it look like from the outside.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="info">
+  <span class="kicker">02 — One substance, two faces</span>
+  <h2>Information is the deeper layer</h2>
+  <p>There aren't two stuffs (matter + mind). There is one thing — <strong>information</strong> — described two ways:</p>
+  <ul>
+    <li><strong>Science</strong> = the exterior of information (atoms, fields, equations)</li>
+    <li><strong>Experience</strong> = the interior of information (color, sound, qualia)</li>
+  </ul>
+  <p>This is John Wheeler's <em>participatory universe</em>: reality isn't pre-built — it crystallizes through interaction.</p>
+
+  <div class="diagram" style="height:260px;margin-top:14px" id="d-coin">
+    <span class="label">Interactive · click the coin</span>
+    <svg viewBox="0 0 600 260" width="100%" height="100%">
+      <defs>
+        <linearGradient id="g1" x1="0" x2="1"><stop offset="0" stop-color="#7cf2c8"/><stop offset="1" stop-color="#a78bfa"/></linearGradient>
+      </defs>
+      <g id="coinG" style="cursor:pointer;transform-origin:300px 130px">
+        <ellipse cx="300" cy="130" rx="110" ry="40" fill="none" stroke="url(#g1)" stroke-width="2"/>
+        <text x="300" y="135" text-anchor="middle" fill="#e8ecf5" font-size="20" font-weight="700" id="coinLbl">INFORMATION</text>
+      </g>
+      <text x="120" y="60" fill="#9aa3b8" font-size="12">EXTERIOR · matter</text>
+      <text x="480" y="60" text-anchor="end" fill="#9aa3b8" font-size="12">INTERIOR · experience</text>
+      <line x1="120" y1="70" x2="220" y2="115" stroke="#1c2030"/>
+      <line x1="480" y1="70" x2="380" y2="115" stroke="#1c2030"/>
+    </svg>
+  </div>
+</section>
+
+<section id="render">
+  <span class="kicker">03 — The videogame model</span>
+  <h2>Reality renders at the point of interaction</h2>
+  <p>Like a game that doesn't draw the map until you walk there: the <em>potential</em> is real, but the <em>actual</em> world crystallizes when something engages it. The telescope didn't reveal Jupiter's moons hiding in the dark — it participated in what became actual.</p>
+  <div class="diagram" style="height:340px;margin-top:14px" id="d-render">
+    <span class="label">Interactive · move the cursor</span>
+    <canvas id="c-render" width="900" height="340" style="width:100%;height:100%;display:block"></canvas>
+  </div>
+  <div class="ctrls">
+    <button class="btn" onclick="renderState.show=!renderState.show">Toggle: code vs. screen</button>
+    <button class="btn" onclick="renderState.auto=!renderState.auto">Auto-explore</button>
+  </div>
+  <div class="legend"><span><i style="background:#1c2030"></i>Unrendered potential</span><span><i style="background:#7cf2c8"></i>Rendered (interacted) region</span></div>
+</section>
+
+<section id="entangle">
+  <span class="kicker">04 — Entanglement</span>
+  <h2>"Entanglement" is the wrong word</h2>
+  <p>When two particles are "entangled," there were never two separate things connected. There was <strong>one</strong> quantum state that <em>appeared</em> as two when it rendered into space. The perfect correlation isn't a link — it's <em>the residual fingerprint of the fact they were never two to begin with</em>.</p>
+  <blockquote>Two pixels on opposite sides of a screen look far apart. In the underlying memory, they are variables sitting next to each other. Distance is rendered, not fundamental.</blockquote>
+
+  <div class="diagram" style="height:300px;margin-top:14px" id="d-ent">
+    <span class="label">Interactive · click "measure"</span>
+    <svg id="entSvg" viewBox="0 0 700 300" width="100%" height="100%">
+      <line x1="50" y1="150" x2="650" y2="150" stroke="#1c2030" stroke-dasharray="4 6"/>
+      <circle id="pA" cx="180" cy="150" r="22" fill="#7cf2c8"/>
+      <circle id="pB" cx="520" cy="150" r="22" fill="#a78bfa"/>
+      <text x="180" y="200" text-anchor="middle" fill="#9aa3b8" font-size="12">New York</text>
+      <text x="520" y="200" text-anchor="middle" fill="#9aa3b8" font-size="12">Barcelona</text>
+      <text id="spinA" x="180" y="156" text-anchor="middle" fill="#07080d" font-size="14" font-weight="700">?</text>
+      <text id="spinB" x="520" y="156" text-anchor="middle" fill="#07080d" font-size="14" font-weight="700">?</text>
+      <text x="350" y="60" text-anchor="middle" fill="#e8ecf5" font-size="13">One quantum state · rendered as two particles</text>
+    </svg>
+  </div>
+  <div class="ctrls">
+    <button class="btn" onclick="measureEnt()">Measure A</button>
+    <button class="btn" onclick="resetEnt()">Reset</button>
+  </div>
+</section>
+
+<section id="vacuum">
+  <span class="kicker">05 — The 2026 STAR experiment</span>
+  <h2>Particles emerging from "empty" space</h2>
+  <p>In February 2026 the STAR Collaboration at Brookhaven published in <em>Nature</em> the first direct evidence that real matter can be traced to virtual particles flickering in the quantum vacuum. Lambda hyperon pairs emerged from proton collisions with <strong>100% spin correlation</strong> — meaning they were never two; they were one vacuum state rendered into two particles.</p>
+  <div class="stat">
+    <div class="b"><div class="n">100%</div><div class="l">Spin correlation in close pairs</div></div>
+    <div class="b"><div class="n">&lt;1%</div><div class="l">of a proton's mass comes from its quarks</div></div>
+    <div class="b"><div class="n">~95%</div><div class="l">of the universe is dark matter + dark energy</div></div>
+  </div>
+</section>
+
+<section id="mass">
+  <span class="kicker">06 — Where weight comes from</span>
+  <h2>Mass is what the rendering weighs</h2>
+  <p>A proton is three quarks. You'd expect its mass to be ~3 quark masses. It isn't. Quarks supply <strong>less than 1%</strong>. The other 99% is the energy of gluon fields and virtual pairs flickering in the "empty" space between them.</p>
+  <p>Pick up any object. Almost none of its weight comes from the particles inside. It comes from the vacuum sustaining a pattern. <em>The particles are nearly weightless. The rendering is heavy.</em></p>
+
+  <div class="diagram" style="height:260px;margin-top:14px">
+    <span class="label">Proton mass breakdown</span>
+    <svg viewBox="0 0 600 260" width="100%" height="100%">
+      <g transform="translate(60,40)">
+        <rect x="0" y="0" width="480" height="40" fill="#1c2030" rx="6"/>
+        <rect x="0" y="0" width="4.8" height="40" fill="#7cf2c8" rx="6"/>
+        <text x="0" y="65" fill="#9aa3b8" font-size="12">0%</text>
+        <text x="480" y="65" text-anchor="end" fill="#9aa3b8" font-size="12">100% of proton mass</text>
+        <text x="2.4" y="100" fill="#7cf2c8" font-size="12">Quarks: ~1%</text>
+        <text x="240" y="130" text-anchor="middle" fill="#a78bfa" font-size="14">Vacuum activity: ~99%</text>
+        <text x="240" y="180" text-anchor="middle" fill="#9aa3b8" font-size="12">gluon fields · virtual pairs · binding energy</text>
+      </g>
+    </svg>
+  </div>
+</section>
+
+<section id="code">
+  <span class="kicker">07 — The code beneath</span>
+  <h2>Dark energy, dark matter, antimatter, black holes</h2>
+  <p>Treat the visible world as the rendered screen. The 95% of the universe physics can't see directly is the <em>code</em>.</p>
+  <table>
+    <thead><tr><th>Phenomenon</th><th>What it does</th><th>What it might be</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Dark energy</strong></td><td>Accelerates the expansion of space</td><td>The vacuum's baseline restlessness — what it costs to keep the rendering running</td></tr>
+      <tr><td><strong>Dark matter</strong></td><td>Holds galaxies together gravitationally, but emits no light</td><td>Information that participates in relationships without committing to form — referenced but never printed</td></tr>
+      <tr><td><strong>Antimatter</strong></td><td>Appears in pairs with normal matter, then annihilates back to energy</td><td>The complementary half forced to appear because the screen only speaks in duality</td></tr>
+      <tr><td><strong>Black holes</strong></td><td>Mass so dense that space-time fails as a description</td><td>Where rendering breaks down — the screen folding back into the code (information preserved, form lost)</td></tr>
+    </tbody>
+  </table>
+
+  <div class="diagram" style="height:300px;margin-top:18px" id="d-pie">
+    <span class="label">~95% of the universe is the unrendered code</span>
+    <svg viewBox="0 0 600 300" width="100%" height="100%">
+      <g transform="translate(150,150)">
+        <circle r="110" fill="#0c0f19" stroke="#1c2030"/>
+        <!-- 5% ordinary -->
+        <path d="M0,0 L110,0 A110,110 0 0,1 105.5,30.6 Z" fill="#7cf2c8"/>
+        <!-- 27% dark matter -->
+        <path d="M0,0 L105.5,30.6 A110,110 0 0,1 -34,104.6 Z" fill="#a78bfa"/>
+        <!-- 68% dark energy -->
+        <path d="M0,0 L-34,104.6 A110,110 0 1,1 110,0 Z" fill="#3a2c66"/>
+      </g>
+      <g font-size="13" fill="#e8ecf5">
+        <text x="310" y="100"><tspan fill="#7cf2c8">■</tspan> Ordinary matter — 5%</text>
+        <text x="310" y="150"><tspan fill="#a78bfa">■</tspan> Dark matter — 27%</text>
+        <text x="310" y="200"><tspan fill="#3a2c66">■</tspan> Dark energy — 68%</text>
+        <text x="310" y="240" fill="#9aa3b8" font-size="11">We live in the subtitles. The movie is bigger.</text>
+      </g>
+    </svg>
+  </div>
+</section>
+
+<section id="tuning">
+  <span class="kicker">08 — Consciousness</span>
+  <h2>You are the radio tuning in, not the signal arriving</h2>
+  <p>Every conscious system shares one trait: a feedback loop complex enough to refer to itself. Maybe consciousness isn't <em>created</em> by the brain — it's <em>allowed</em>. The right arrangement of matter stops blocking it. Sculpture, not assembly.</p>
+  <p><strong>You aren't consciousness plus a body. You are infinite potential minus everything you are not.</strong> Birth is a very specific act of forgetting. Memory is the ongoing act of continuing to forget everything else.</p>
+</section>
+
+<section id="exp">
+  <span class="kicker">09 — Testable today</span>
+  <h2>The experiments being run right now</h2>
+  <p>If observation participates in reality, an active observer in a feedback loop with a true quantum random number generator should produce a tiny statistical deviation from 50/50. A human can do ~1 observation/second. An AI can do millions. Several groups are testing this:</p>
+  <table>
+    <thead><tr><th>Project</th><th>What they do</th><th>Status</th></tr></thead>
+    <tbody>
+      <tr><td>STAR Collaboration (Brookhaven)</td><td>Particles from the quantum vacuum — 100% spin correlation</td><td>Published, <em>Nature</em> Feb 2026</td></tr>
+      <tr><td>Google Quantum AI / Christof Koch</td><td>Brain ↔ quantum computer entanglement proposal</td><td>Published in <em>Entropy</em>, 2024</td></tr>
+      <tr><td>What The Quark</td><td>Human vs GPT-4o-mini vs null on a QRNG</td><td>Collecting data, 2025–</td></tr>
+      <tr><td>HALO AI</td><td>Quantum RNG fused into a neural network</td><td>2026 Google Quantum XPrize entrant</td></tr>
+      <tr><td>Global Consciousness Project</td><td>Worldwide QRNG network since 1998</td><td>25+ years, contested results</td></tr>
+      <tr><td>Nirvanic</td><td>Brain ↔ quantum system interface device</td><td>Early development</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section id="cern">
+  <span class="kicker">10 — A warning about the noise</span>
+  <h2>The viral "CERN parallel universe" claim is fabricated</h2>
+  <p>A widely shared post claims CERN ran a quantum simulation that revealed an "intelligent parallel reality monitoring us." There is <strong>no</strong> CERN press release, no paper, no named researchers, no experiment cited. CERN's actual work in late 2025 was finishing the proton run, preparing lead-ion collisions, releasing an environmental report, and approving an AI use policy.</p>
+  <details><summary>Red flags in the original claim</summary>
+    <ul>
+      <li>Vague attribution: "Scientists at CERN" with no names, no experiment (ATLAS? CMS? ALICE?)</li>
+      <li>Sensational language: "stunned the world", "most important breakthrough in human history"</li>
+      <li>Pseudoscientific phrasing: "quantum code appeared to be aware"</li>
+      <li>Hashtags like <code>#fblifestyle</code> — viral marketing markers, not science communication</li>
+      <li>No links to peer-reviewed sources</li>
+    </ul>
+  </details>
+  <p>The genuinely strange physics — the 2026 STAR result, the proton mass problem, entanglement at LHC energies — is interesting <em>enough</em> without invention.</p>
+</section>
+
+<section id="map">
+  <span class="kicker">11 — The whole picture</span>
+  <h2>One thread, end to end</h2>
+  <p>One claim ties every section together: <strong>reality is potential constraining itself, and what we call matter, mass, separation and time are how that constraint shows up on a screen with pixels.</strong></p>
+  <ol>
+    <li>You have only ever encountered the world inside experience.</li>
+    <li>The most parsimonious move is to treat awareness — not matter — as primary, and information as the substance both share.</li>
+    <li>Reality renders at interaction (Wheeler's participatory universe).</li>
+    <li>Entanglement is the residue of oneness underneath rendered separation.</li>
+    <li>The vacuum is not empty — it is structured potential. STAR (2026) caught it generating real, perfectly-correlated particles.</li>
+    <li>Mass is overwhelmingly the vacuum's activity, not the particles themselves.</li>
+    <li>Dark energy, dark matter, antimatter and black holes are the seams where the code shows through the screen.</li>
+    <li>Consciousness may be a tuning — what happens when matter folds back on itself enough to stop blocking the default state.</li>
+    <li>If observation participates in reality, AI-driven QRNG experiments are the first place a tiny, real effect could show up.</li>
+  </ol>
+  <blockquote>You were always the whole show, pretending to be the audience. Keep going.</blockquote>
+</section>
+
+<hr/>
+<footer>
+  Built from a set of conversations and the 2026 STAR result. Speculative where labeled, sourced where possible.<br/>
+  Sources: <a href="https://www.nature.com/articles/s41586-025-09920-0">STAR (Nature 2026)</a> ·
+  <a href="https://www.mdpi.com/1099-4300/26/6/460">Neven, Koch et al. (Entropy 2024)</a> ·
+  <a href="https://noosphere.princeton.edu">Global Consciousness Project</a> ·
+  <a href="https://home.cern/news">CERN news</a>
+</footer>
+
+</main>
+
+<script>
+// --- Coin flip
+(function(){
+  const g = document.getElementById('coinG');
+  const lbl = document.getElementById('coinLbl');
+  let f = 0;
+  const faces = ['INFORMATION','MATTER','EXPERIENCE'];
+  g.addEventListener('click',()=>{
+    f = (f+1)%faces.length;
+    g.animate([{transform:'rotateY(0)'},{transform:'rotateY(180deg)'}],{duration:500});
+    setTimeout(()=>lbl.textContent = faces[f],250);
+  });
+})();
+
+// --- Render canvas (potential vs rendered)
+const renderState = {x:-999,y:-999,show:true,auto:false,t:0};
+(function(){
+  const c = document.getElementById('c-render');
+  const ctx = c.getContext('2d');
+  const rect = ()=>c.getBoundingClientRect();
+  c.addEventListener('pointermove',e=>{
+    const r = rect();
+    renderState.x = (e.clientX - r.left) * (c.width/r.width);
+    renderState.y = (e.clientY - r.top) * (c.height/r.height);
+    renderState.auto=false;
+  });
+  c.addEventListener('pointerleave',()=>{renderState.x=-999;renderState.y=-999});
+  function loop(){
+    renderState.t += 0.012;
+    ctx.fillStyle='#0a0d16'; ctx.fillRect(0,0,c.width,c.height);
+    // unrendered potential — faint dot field
+    if(renderState.show){
+      ctx.fillStyle='#141a2a';
+      for(let i=0;i<1400;i++){
+        const x=(i*53%c.width);
+        const y=((i*97)%c.height);
+        ctx.fillRect(x,y,1.2,1.2);
+      }
+    }
+    let cx=renderState.x, cy=renderState.y;
+    if(renderState.auto || (cx<0)){
+      cx = c.width/2 + Math.cos(renderState.t)*c.width*0.32;
+      cy = c.height/2 + Math.sin(renderState.t*1.3)*c.height*0.32;
+    }
+    // rendered region
+    const R=140;
+    const grad = ctx.createRadialGradient(cx,cy,4,cx,cy,R);
+    grad.addColorStop(0,'rgba(124,242,200,.55)');
+    grad.addColorStop(.5,'rgba(167,139,250,.18)');
+    grad.addColorStop(1,'rgba(167,139,250,0)');
+    ctx.fillStyle=grad; ctx.beginPath(); ctx.arc(cx,cy,R,0,Math.PI*2); ctx.fill();
+    // sharp particles inside
+    for(let i=0;i<60;i++){
+      const a=i*0.31+renderState.t;
+      const r=Math.sqrt(i)*14;
+      if(r>R)break;
+      const x=cx+Math.cos(a)*r, y=cy+Math.sin(a)*r;
+      ctx.fillStyle='#7cf2c8';
+      ctx.fillRect(x,y,2,2);
+    }
+    ctx.strokeStyle='rgba(124,242,200,.4)';
+    ctx.beginPath(); ctx.arc(cx,cy,R,0,Math.PI*2); ctx.stroke();
+    ctx.fillStyle='#9aa3b8'; ctx.font='12px system-ui';
+    ctx.fillText('point of interaction',cx+10,cy-R-6);
+    requestAnimationFrame(loop);
+  }
+  loop();
+})();
+
+// --- Entanglement
+function measureEnt(){
+  const up = Math.random()<0.5;
+  const a = document.getElementById('spinA');
+  const b = document.getElementById('spinB');
+  a.textContent = up?'↑':'↓';
+  b.textContent = up?'↓':'↑';
+  document.getElementById('pA').setAttribute('fill', up?'#7cf2c8':'#a78bfa');
+  document.getElementById('pB').setAttribute('fill', up?'#a78bfa':'#7cf2c8');
+}
+function resetEnt(){
+  document.getElementById('spinA').textContent='?';
+  document.getElementById('spinB').textContent='?';
+  document.getElementById('pA').setAttribute('fill','#7cf2c8');
+  document.getElementById('pB').setAttribute('fill','#a78bfa');
+}
+</script>
+</body>
+</html>
